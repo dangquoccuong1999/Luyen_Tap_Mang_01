@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let arr = [];
+    let dem = 0;
+    let n = Number(prompt('Mời bạn nhập số phần tử: '));
+    for (let i = 0; i < n; i++) {
+        arr[i] = Number(prompt('Mời bạn nhập số nguyên: '));
+        if (arr[i] < 0) {
+            dem++;
+        }
+    }
+    document.write('Số lượng số nguyên âm bạn vừa nhập là: '+ dem);
+</script>
+</body>
+</html>

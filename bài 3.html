@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let arr = [];
+    let tong = 0;
+    let max = 0;
+    let n= Number(prompt('Bạn muốn nhập bao nhiêu phần tử: '))
+
+    function input() {
+        for (let i = 1; i <= n; i++) {
+            arr[i] = Number(prompt('Mời bạn nhập số nguyên'));
+            if (max < arr[i]) {
+                max = arr[i];
+            }
+            tong += arr [i];
+        }
+    }
+    input();
+    console.log(tong);
+    document.write('Giá trị lớn nhất trong mảng là: ' + max  + '<br>' + "Giá trị trung bình là: "+ tong/n);
+
+
+</script>
+</body>
+</html>

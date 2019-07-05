@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let dem = 0;
+    let arr = [];
+    let max =0;
+    for(let i= 0 ; i < 10 ; i++){
+        arr [i] = Number(prompt('Mời bạn nhập số: '));
+    }
+    for (let i = 0; i< arr.length; i++){
+        if (max < arr[i]){
+            max = arr[i];
+            dem ++
+        }
+    }
+    console.log(arr);
+    document.write('Max có giá trị là: ' + max + "<br>" + "Vị trí của max là: " + dem)
+</script>
+
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let arr = [];
+    let check;
+    let n = Number(prompt('Mời bạn nhập số phần tử: '));
+    // khởi tạo phần tử vào mảng
+    for (let i = 0; i < n; i++) {
+        arr[i] = Number(prompt('Mời bạn nhập số nguyên: '));
+    }
+
+    //Nhập số nguyên cần tìm
+    let soNguyen = Number(prompt('Mời bạn nhập số cần tìm: '));
+    // tìm kiếm
+    for (let i = 0; i < arr.length; i++) {
+        if (soNguyen == arr[i]) {
+            alert('V is in the array');
+            check = 1;
+        }
+    }
+    if (check != 1) {
+        alert('V is not in the array');
+    }
+
+
+</script>
+</body>
+</html>

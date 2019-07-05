@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let n= Number(prompt('Mời bạn nhập số lượng phần tử: '));
+    let arr = [];
+    let arr_dao = [];
+    //Khởi tạo số vào mảng
+    for (let i = 0; i < n ; i++){
+        arr[i] = Number(prompt('Mời bạn nhập số nguyên : '));
+    }
+    console.log(arr);
+    // đảo ngược
+    for (let i= 0; i < arr.length; i++){
+        arr_dao[i] = arr[arr.length-1-i];
+    }
+    document.write('Số nguyên vừa đảo là: ' + arr_dao);
+    console.log(arr_dao)
+</script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let arr = []
+    let check;
+    let soNguyen;
+    let dem = 0;
+    let n = Number(prompt('Mời bạn nhập số lượng phần tử: '));
+    // Nhập các số nguyên vào mảng
+    for (let i= 0 ; i< n ; i++){
+        arr [i] = Number(prompt('Mời bạn nhập các số nguyên:'))
+    }
+    //Nhập số nguyên cần tìm
+     soNguyen = Number(prompt('Mời bạn nhập số cần tìm: '));
+    // tìm kiếm
+    for ( let i = 0 ;  i<n ; i++){
+        if (soNguyen == arr[i]){
+            xoaPhanTu(soNguyen);
+            check = 1;
+        }
+    }
+    if (check != 1){
+        alert('V is not in the array');
+    }
+
+    function xoaPhanTu(soNguyen) {
+        let viTri = arr.indexOf(soNguyen); // lấy vị trí
+        for (let i=viTri;i<arr.length-1;i++) {
+            arr[i]= arr[i+1];
+        }
+        arr.length--;
+    }
+</script>
+</body>
+</html>
